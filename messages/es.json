@@ -54,18 +54,38 @@
         "present": "Presente",
         "jobs": [
             {
-                "company": "Viaro Networks",
+                "company": "Improving",
+                "companyNote": "antes MangoChango",
                 "role": "Desarrollador de Software Contratista",
                 "period": "2023 – Presente",
                 "location": "Remoto",
-                "description": "Contratista para una plataforma CRM basada en Sitefinity. Responsable del desarrollo de widgets personalizados, plantillas de contenido e integraciones empresariales con .NET Framework y Dynamics 365. Construí y mantuve servicios web RESTful consumidos por múltiples clientes web y móviles.",
-                "tech": [
-                    "C#",
-                    ".NET Framework",
-                    "Sitefinity CMS",
-                    "Dynamics 365",
-                    "REST APIs",
-                    "JavaScript"
+                "description": "Contratista en Improving, empresa de consultoría de software. Asignado a múltiples proyectos de clientes en industrias como salud, tecnología y medios digitales. También contribuyendo directamente en plataforma interna con Sitefinity CMS, widgets personalizados e integraciones .NET/Dynamics 365, más frontend React.js con Redux y Ant Design con hooks personalizados.",
+                "tech": ["C#", ".NET Framework", "Sitefinity CMS", "Dynamics 365", "React.js", "Redux", "Ant Design", "REST APIs"],
+                "clients": [
+                    {
+                        "company": "Headstorm AI",
+                        "period": "10/2025 – Presente",
+                        "description": "Ingeniero de Software para Portal de Referencias integrado con Pipedrive, con visibilidad de deals en tiempo real. Lideré el desarrollo end-to-end de un módulo nuevo en 2 meses, automatizando un proceso completamente manual. Full-stack en Proxima y Manager App.",
+                        "tech": [".NET", "React", "Next.js", "Azure", "Clerk", "JWT", "MSSQL", "Azure DevOps", "Scrum"]
+                    },
+                    {
+                        "company": "The Worship Initiative",
+                        "period": "04/2025 – 10/2025",
+                        "description": "Ingeniero de Software en modernización de plataforma de música digital, migrando app legacy a modelo de suscripción (streaming, partituras, videos devocionales). Arquitectura micro-frontend con React/Vite y backend .NET, acelerando entregas de mensuales a semanales.",
+                        "tech": [".NET", "React", "Vite", "Redis", "Playwright", "MSSQL", "Scrum"]
+                    },
+                    {
+                        "company": "Upvate",
+                        "period": "03/2024 – 03/2025",
+                        "description": "Ingeniero de Software en reemplazo de sistema legacy, modernizando plataforma desactualizada con Python (Django) y MongoDB en backend y React/Vite en frontend. Mejor rendimiento, estructura flexible y mayor mantenibilidad.",
+                        "tech": ["Python", "Django", "MongoDB", "PostgreSQL", "React", "Vite", "Redis", "Scrum"]
+                    },
+                    {
+                        "company": "Healthmine",
+                        "period": "11/2023 – 02/2024",
+                        "description": "Ingeniero de Software en Plataforma de Recompensas de Salud, configurando estructuras de incentivos para programas médicos en EE.UU. Adaptación rápida a Java, Spring Boot, Kotlin y Oracle DB; interacción directa con stakeholders.",
+                        "tech": ["Java", "Spring Boot", "Kotlin", "Oracle DB", "Jira", "Scrum"]
+                    }
                 ]
             },
             {

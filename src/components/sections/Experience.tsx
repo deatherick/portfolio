@@ -2,17 +2,22 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
-interface Job {
-    company: string;
-    role: string;
-    period: string;
-    location: string;
-    description: string;
-    tech: string[];
+interface Client {
+  company: string;
+  period: string;
+  description: string;
+  tech: string[];
 }
 
-export default function Experience() {
-    const t = useTranslations("experience");
+interface Job {
+  company: string;
+  companyNote?: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  tech: string[];
+  clients?: Client[];
     const jobs = t.raw("jobs") as Job[];
 
     return (
@@ -50,6 +55,9 @@ export default function Experience() {
                                 </div>
                                 <div className="flex items-center gap-2 mb-3">
                                     <span className="text-sm text-cyan-400 font-medium">{job.company}</span>
+                                    {job.companyNote && (
+                                        <span className="text-xs text-slate-600 italic">({job.companyNote})</span>
+                                    )}
                                     <span className="text-slate-600 text-xs">·</span>
                                     <span className="text-xs text-slate-500">{job.location}</span>
                                 </div>
@@ -59,6 +67,27 @@ export default function Experience() {
                                         <span key={t} className="px-2 py-0.5 bg-slate-800 text-slate-400 rounded text-xs">{t}</span>
                                     ))}
                                 </div>
+
+                                {/* Nested client engagements */}
+                                {job.clients && job.clients.length > 0 && (
+                                    <div className="mt-5 border-t border-slate-800 pt-4 space-y-4">
+                                        <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest">Client Engagements</p>
+                                        {job.clients.map((client) => (
+                                            <div key={client.company} className="pl-3 border-l-2 border-cyan-400/30">
+                                                <div className="flex flex-wrap items-center justify-between gap-1 mb-1">
+                                                    <span className="text-sm font-semibold text-cyan-300">{client.company}</span>
+                                                    <span className="text-xs text-slate-500">{client.period}</span>
+                                                </div>
+                                                <p className="text-xs text-slate-400 leading-relaxed mb-2">{client.description}</p>
+                                                <div className="flex flex-wrap gap-1">
+                                                    {client.tech.map((t) => (
+                                                        <span key={t} className="px-2 py-0.5 bg-cyan-400/5 border border-cyan-400/20 text-cyan-400/70 rounded text-xs">{t}</span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
                     ))}
