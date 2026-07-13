@@ -18,7 +18,11 @@ interface Job {
   description: string;
   tech: string[];
   clients?: Client[];
-    const jobs = t.raw("jobs") as Job[];
+}
+
+export default function Experience() {
+  const t = useTranslations("experience");
+  const jobs = t.raw("jobs") as Job[];
 
     return (
         <section id="experience" className="py-24 px-4 max-w-4xl mx-auto">
@@ -71,7 +75,7 @@ interface Job {
                                 {/* Nested client engagements */}
                                 {job.clients && job.clients.length > 0 && (
                                     <div className="mt-5 border-t border-slate-800 pt-4 space-y-4">
-                                        <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest">Client Engagements</p>
+                                        <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest">{t("clientEngagements")}</p>
                                         {job.clients.map((client) => (
                                             <div key={client.company} className="pl-3 border-l-2 border-cyan-400/30">
                                                 <div className="flex flex-wrap items-center justify-between gap-1 mb-1">

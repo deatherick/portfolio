@@ -52,6 +52,7 @@
         "title": "Experiencia Laboral",
         "subtitle": "10+ años construyendo software en startups, empresas y consultoras",
         "present": "Presente",
+        "clientEngagements": "Clientes Asignados",
         "jobs": [
             {
                 "company": "Improving",
@@ -89,8 +90,16 @@
                 ]
             },
             {
+                "company": "BairesDev",
+                "role": "Ingeniero de Software Contratista (Freelance)",
+                "period": "10/2021 – 05/2023",
+                "location": "Remoto",
+                "description": "Contratista freelance a través de BairesDev, asignado a múltiples cuentas en industrias de Salud y Petróleo & Gas. Soporte remoto a servicios backend en .NET y aplicaciones frontend en React, en distintos roles incluyendo desarrollador y contratista en diferentes clientes.",
+                "tech": [".NET", "C#", "React", "REST APIs", "SQL Server", "Agile"]
+            },
+            {
                 "company": "Conduent",
-                "role": "Desarrollador de Software II / Gerente de Configuración",
+                "role": "Desarrollador de Software II / Gerente de Configuración"",
                 "period": "2020 – 2023",
                 "location": "Ciudad de Guatemala",
                 "description": "Desarrollador para la unidad de negocio de Travelers Insurance, con herramientas personalizadas para ingesta de documentos físicos y electrónicos y Reconocimiento Óptico de Caracteres. Lideré la migración al control de versiones con Git y fui responsable único de la Gestión de Configuración de Software para todos los equipos.",

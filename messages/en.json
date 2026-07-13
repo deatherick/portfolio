@@ -52,6 +52,7 @@
         "title": "Work Experience",
         "subtitle": "10+ years building software across startups, enterprises and consultancies",
         "present": "Present",
+        "clientEngagements": "Client Engagements",
         "jobs": [
             {
                 "company": "Improving",
@@ -87,6 +88,14 @@
                         "tech": ["Java", "Spring Boot", "Kotlin", "Oracle DB", "Jira", "Scrum"]
                     }
                 ]
+            },
+            {
+                "company": "BairesDev",
+                "role": "Software Engineer Contractor (Freelance)",
+                "period": "10/2021 – 05/2023",
+                "location": "Remote",
+                "description": "Freelance contractor through BairesDev, assigned to multiple accounts across Healthcare and Oil & Gas industries. Provided remote support to backend services built on .NET and frontend applications built with React, working in different roles including developer and contractor across client engagements.",
+                "tech": [".NET", "C#", "React", "REST APIs", "SQL Server", "Agile"]
             },
             {
                 "company": "Conduent",
