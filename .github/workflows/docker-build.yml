@@ -10,7 +10,43 @@ env:
   IMAGE_NAME: ${{ github.repository }}   # deatherick/portfolio
 
 jobs:
+  # ── Job 1: Validate code before building ───────────────────────────────────
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate JSON message files
+        run: |
+          echo "Validating JSON files..."
+          for f in messages/*.json; do
+            node -e "
+              try {
+                JSON.parse(require('fs').readFileSync('$f', 'utf8'));
+                console.log('✓', '$f');
+              } catch(e) {
+                console.error('✗', '$f:', e.message);
+                process.exit(1);
+              }
+            "
+          done
+
+      - name: TypeScript type check
+        run: npx tsc --noEmit --skipLibCheck
+
+  # ── Job 2: Build and push Docker image (only if validate passes) ───────────
   build-and-push:
+    needs: validate
     runs-on: ubuntu-latest
     permissions:
       contents: read
