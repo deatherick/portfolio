@@ -133,6 +133,14 @@
                 ]
             },
             {
+                "company": "Viaro Networks",
+                "role": "Desarrollador de Software Contratista",
+                "period": "06/2023 – 12/2023",
+                "location": "Remoto",
+                "description": "Contratista para una plataforma basada en Sitefinity CRM, construyendo widgets personalizados y aplicaciones de plantillas usando .NET Framework con integraciones a Dynamics 365 y servicios web REST. Frontend en React.js con Redux para gestión de estado y Ant Design para componentes de UI, con hooks personalizados para lógica de negocio específica.",
+                "tech": ["C#", ".NET Framework", "Sitefinity CMS", "Dynamics 365", "React", "Redux", "Ant Design", "REST APIs"]
+            },
+            {
                 "company": "BairesDev",
                 "role": "Ingeniero de Software Contratista (Freelance)",
                 "period": "10/2021 – 05/2023",

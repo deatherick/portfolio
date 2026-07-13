@@ -61,33 +61,84 @@
                 "period": "2023 – Present",
                 "location": "Remote",
                 "description": "Contractor at Improving, a software consulting firm. Assigned to multiple client engagements across industries including healthcare, technology and digital media. Also contributing directly to internal platform development using Sitefinity CMS, building custom widgets and template applications with .NET Framework and Dynamics 365 integrations, plus a React.js frontend using Redux reducers and Ant Design components with custom hooks.",
-                "tech": ["C#", ".NET Framework", "Sitefinity CMS", "Dynamics 365", "React.js", "Redux", "Ant Design", "REST APIs"],
+                "tech": [
+                    "C#",
+                    ".NET Framework",
+                    "Sitefinity CMS",
+                    "Dynamics 365",
+                    "React.js",
+                    "Redux",
+                    "Ant Design",
+                    "REST APIs"
+                ],
                 "clients": [
                     {
                         "company": "Headstorm AI",
                         "period": "10/2025 – Present",
                         "description": "Software Engineer for a Partner Referral Portal integrated with Pipedrive, providing real-time deal visibility and referral-based rewards. Led end-to-end development of a new module within a 2-month timeframe, transitioning a fully manual process into a scalable automated solution. Full-stack engineer across Proxima and Manager App.",
-                        "tech": [".NET", "React", "Next.js", "Azure", "Clerk", "JWT", "MSSQL", "Azure DevOps", "Scrum"]
+                        "tech": [
+                            ".NET",
+                            "React",
+                            "Next.js",
+                            "Azure",
+                            "Clerk",
+                            "JWT",
+                            "MSSQL",
+                            "Azure DevOps",
+                            "Scrum"
+                        ]
                     },
                     {
                         "company": "The Worship Initiative",
                         "period": "04/2025 – 10/2025",
                         "description": "Software Engineer for a Digital Music Platform Modernization, transitioning a legacy app into a subscription-based model (streaming, sheet music, devotional videos). Built micro-frontend architecture with React/Vite and .NET backend, accelerating releases from monthly to weekly cadence.",
-                        "tech": [".NET", "React", "Vite", "Redis", "Playwright", "MSSQL", "Scrum"]
+                        "tech": [
+                            ".NET",
+                            "React",
+                            "Vite",
+                            "Redis",
+                            "Playwright",
+                            "MSSQL",
+                            "Scrum"
+                        ]
                     },
                     {
                         "company": "Upvate",
                         "period": "03/2024 – 03/2025",
                         "description": "Software Engineer for a Legacy System Replacement, modernizing an outdated platform using Python (Django) and MongoDB on the backend and React with Vite on the frontend. Delivered improved performance, flexible data structure and long-term maintainability.",
-                        "tech": ["Python", "Django", "MongoDB", "PostgreSQL", "React", "Vite", "Redis", "Scrum"]
+                        "tech": [
+                            "Python",
+                            "Django",
+                            "MongoDB",
+                            "PostgreSQL",
+                            "React",
+                            "Vite",
+                            "Redis",
+                            "Scrum"
+                        ]
                     },
                     {
                         "company": "Healthmine",
                         "period": "11/2023 – 02/2024",
                         "description": "Software Engineer supporting a Healthcare Rewards Platform, configuring reward structures for U.S.-based medical programs. Ramped up quickly on Java, Spring Boot, Kotlin and Oracle DB, engaging directly with stakeholders to clarify evolving requirements.",
-                        "tech": ["Java", "Spring Boot", "Kotlin", "Oracle DB", "Jira", "Scrum"]
+                        "tech": [
+                            "Java",
+                            "Spring Boot",
+                            "Kotlin",
+                            "Oracle DB",
+                            "Jira",
+                            "Scrum"
+                        ]
                     }
                 ]
+            },
+            {
+                "company": "Viaro Networks",
+                "role": "Software Developer Contractor",
+                "period": "06/2023 – 12/2023",
+                "location": "Remote",
+                "description": "Contractor for a platform based on Sitefinity CRM, building custom widgets and template applications using .NET Framework with Dynamics 365 integrations and RESTful web services. Frontend built with React.js using Redux reducers for state management and Ant Design for UI components, with custom hooks for specific business logic.",
+                "tech": ["C#", ".NET Framework", "Sitefinity CMS", "Dynamics 365", "React", "Redux", "Ant Design", "REST APIs"]
             },
             {
                 "company": "BairesDev",
@@ -95,7 +146,14 @@
                 "period": "10/2021 – 05/2023",
                 "location": "Remote",
                 "description": "Freelance contractor through BairesDev, assigned to multiple accounts across Healthcare and Oil & Gas industries. Provided remote support to backend services built on .NET and frontend applications built with React, working in different roles including developer and contractor across client engagements.",
-                "tech": [".NET", "C#", "React", "REST APIs", "SQL Server", "Agile"]
+                "tech": [
+                    ".NET",
+                    "C#",
+                    "React",
+                    "REST APIs",
+                    "SQL Server",
+                    "Agile"
+                ]
             },
             {
                 "company": "Conduent",
