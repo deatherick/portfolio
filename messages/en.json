@@ -1,0 +1,245 @@
+{
+    "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "name": "Erick Morales",
+        "title": "Backend Engineer & DevOps Enthusiast",
+        "subtitle": "10+ years building scalable systems across enterprise, cloud and infrastructure",
+        "location": "Guatemala City, Guatemala",
+        "cta_projects": "View Projects",
+        "cta_contact": "Get in Touch",
+        "cta_cv": "Download CV",
+        "available": "Open to opportunities"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "I'm a Software Engineer with over 10 years of experience in software development and DevOps, based in Guatemala City. I specialize in backend systems, enterprise integrations and cloud infrastructure, with a strong track record across industries including telecommunications, insurance, logistics and fintech.",
+        "p2": "I thrive at the intersection of software and infrastructure. Outside of professional work, I run a personal homelab built on Proxmox, Docker and a self-hosted networking stack — which has deepened my passion for automation, observability and systems reliability.",
+        "p3": "My development methodology is SCRUM — adopted since the beginning of my career — and I hold a Professional SCRUM Developer I certification. I believe in clean code, continuous improvement and getting things deployed correctly from day one.",
+        "languages_title": "Languages",
+        "spanish": "Spanish",
+        "spanish_level": "Native / Bilingual",
+        "english": "English",
+        "english_level": "B2 – Professional Working Proficiency",
+        "interests_title": "Interests",
+        "interests": [
+            "Gaming",
+            "Movies",
+            "Home Automation",
+            "Self-hosted Infrastructure",
+            "Spending time with friends & family"
+        ]
+    },
+    "skills": {
+        "title": "Skills & Technologies",
+        "subtitle": "A decade of hands-on experience across the full technology stack",
+        "categories": {
+            "languages": "Programming Languages",
+            "frameworks": "Frameworks & Libraries",
+            "cloud": "Cloud & DevOps",
+            "databases": "Databases",
+            "tools": "Tools & Methodologies"
+        }
+    },
+    "experience": {
+        "title": "Work Experience",
+        "subtitle": "10+ years building software across startups, enterprises and consultancies",
+        "present": "Present",
+        "jobs": [
+            {
+                "company": "Viaro Networks",
+                "role": "Software Developer Contractor",
+                "period": "2023 – Present",
+                "location": "Remote",
+                "description": "Contractor for a CRM platform based on Sitefinity. Responsible for developing custom widgets, content templates and enterprise integrations using .NET Framework and Dynamics 365. Built and maintained RESTful web services consumed by multiple web and mobile clients.",
+                "tech": [
+                    "C#",
+                    ".NET Framework",
+                    "Sitefinity CMS",
+                    "Dynamics 365",
+                    "REST APIs",
+                    "JavaScript"
+                ]
+            },
+            {
+                "company": "Conduent",
+                "role": "Software Developer II / Software Configuration Manager",
+                "period": "2020 – 2023",
+                "location": "Guatemala City",
+                "description": "Software developer for Travelers Insurance Business Unit, working with custom tools for paper and electronic document intake and Optical Character Recognition. Led the company's migration to Git version control and became sole responsible for Software Configuration Management across all teams — including version control strategy, release pipelines via Azure DevOps and continuous improvement of the CI/CD process.",
+                "tech": [
+                    "C#",
+                    ".NET",
+                    "Azure DevOps",
+                    "Git",
+                    "CI/CD",
+                    "OCR",
+                    "SCRUM"
+                ]
+            },
+            {
+                "company": "Ericsson",
+                "role": "IT Engineer / Tester",
+                "period": "2019 – 2020",
+                "location": "Guatemala City",
+                "description": "Supported telecommunications applications for Telefónica Spain. Responsibilities included analysis of new software requirements, production deployments, incident resolution and regression testing for backend services built with Java, Spring and Hibernate.",
+                "tech": [
+                    "Java",
+                    "Spring",
+                    "Hibernate",
+                    "Cobol",
+                    "Testing",
+                    "Telecommunications"
+                ]
+            },
+            {
+                "company": "Inversiones Centroamericanas (Corporación Castillo)",
+                "role": "Software Developer",
+                "period": "2018 – 2019",
+                "location": "Guatemala City",
+                "description": "Created and maintained desktop and web applications using the .NET platform across MVC, WCF and Windows Services architectures. Supported an internal POS system and ERP used across the corporation and its commercial services vice-presidency.",
+                "tech": [
+                    "C#",
+                    ".NET MVC",
+                    "WCF",
+                    "Windows Services",
+                    "SQL Server",
+                    "POS",
+                    "ERP"
+                ]
+            },
+            {
+                "company": "Almo Technology",
+                "role": "System Developer .NET",
+                "period": "2017 – 2018",
+                "location": "Guatemala City",
+                "description": "Designed and built desktop and web applications on the .NET platform. Lead developer of 'Tracker', a process automation and ERP system built from scratch for the company's internal operations.",
+                "tech": [
+                    "C#",
+                    ".NET MVC",
+                    "WCF",
+                    "Windows Services",
+                    "SQL Server",
+                    "ERP"
+                ]
+            },
+            {
+                "company": "Somadtech",
+                "role": "Full Stack Developer",
+                "period": "2015 – 2017",
+                "location": "Guatemala City",
+                "description": "Created web applications using CodeIgniter, Laravel and WordPress. Built RESTful web services to power mobile applications, implementing JWT-based authentication. Worked across the full stack including frontend, backend and database layers.",
+                "tech": [
+                    "PHP",
+                    "Laravel",
+                    "CodeIgniter",
+                    "WordPress",
+                    "JavaScript",
+                    "jQuery",
+                    "JWT",
+                    "MySQL"
+                ]
+            },
+            {
+                "company": "Mobility SCM",
+                "role": "Programmer & Implementer Analyst",
+                "period": "2015",
+                "location": "Guatemala City",
+                "description": "Developed ERP and WMS business software focused on logistics and warehouse management. Built web modules for MySwiftExpress, the company's flagship logistics platform, using ASP.NET and DevExpress. Managed SQL Server databases and Windows server environments.",
+                "tech": [
+                    "C#",
+                    "ASP.NET",
+                    "DevExpress",
+                    "SQL Server",
+                    "WMS",
+                    "ERP",
+                    "Windows Server"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "A selection of public repositories from my GitHub",
+        "view_all": "View all on GitHub",
+        "view_repo": "View on GitHub",
+        "no_description": "No description available",
+        "loading": "Loading projects...",
+        "error": "Could not load projects. View them directly on GitHub."
+    },
+    "education": {
+        "title": "Education & Certifications",
+        "education_title": "Academic Background",
+        "certs_title": "Certifications",
+        "degrees": [
+            {
+                "institution": "Universidad de San Carlos de Guatemala (USAC)",
+                "degree": "Science and Systems Engineering",
+                "period": "2013 – Present",
+                "note": "Fifth semester — ongoing"
+            },
+            {
+                "institution": "Universidad Mariano Gálvez",
+                "degree": "Science and Systems Engineering",
+                "period": "2013",
+                "note": "Transferred to USAC after leveling courses"
+            },
+            {
+                "institution": "Instituto Emiliani Somascos",
+                "degree": "Industrial Bachelor & Computer Expert (Perito en Informática)",
+                "period": "2010 – 2012",
+                "note": "Technical high school diploma"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Professional SCRUM Developer I (PSD I)",
+                "issuer": "Scrum.org",
+                "year": "2019",
+                "description": "Obtained during the Telefónica Spain project at Ericsson"
+            },
+            {
+                "name": "Motorola Solutions Network Implementation",
+                "issuer": "Motorola Solutions",
+                "year": "2015",
+                "description": "Certificate in networks and implementation of Access Points based on Motorola Zebra technology"
+            },
+            {
+                "name": "D-Link Network Basic Certification",
+                "issuer": "D-Link",
+                "year": "2012",
+                "description": "International certificate in computer networks endorsed by D-Link"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "I'm always open to discussing new projects, creative ideas or opportunities.",
+        "email_label": "Email",
+        "linkedin_label": "LinkedIn",
+        "github_label": "GitHub",
+        "location_label": "Location",
+        "location_value": "Guatemala City, Guatemala",
+        "copy_email": "Copy email",
+        "copied": "Copied!",
+        "email": "erick.sisol@gmail.com",
+        "linkedin_url": "https://www.linkedin.com/in/erickmorales-dev/",
+        "github_url": "https://github.com/deatherick"
+    },
+    "admin": {
+        "title": "Dashboard",
+        "coming_soon": "Coming Soon",
+        "description": "Private access area — authentication not yet configured."
+    },
+    "footer": {
+        "built_with": "Built with Next.js, Tailwind CSS & ☕",
+        "source": "Source on GitHub"
+    }
+}
