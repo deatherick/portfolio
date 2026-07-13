@@ -3,26 +3,26 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 interface Client {
-  company: string;
-  period: string;
-  description: string;
-  tech: string[];
+    company: string;
+    period: string;
+    description: string;
+    tech: string[];
 }
 
 interface Job {
-  company: string;
-  companyNote?: string;
-  role: string;
-  period: string;
-  location: string;
-  description: string;
-  tech: string[];
-  clients?: Client[];
+    company: string;
+    companyNote?: string;
+    role: string;
+    period: string;
+    location: string;
+    description: string;
+    tech: string[];
+    clients?: Client[];
 }
 
 export default function Experience() {
-  const t = useTranslations("experience");
-  const jobs = t.raw("jobs") as Job[];
+    const t = useTranslations("experience");
+    const jobs = t.raw("jobs") as Job[];
 
     return (
         <section id="experience" className="py-24 px-4 max-w-4xl mx-auto">

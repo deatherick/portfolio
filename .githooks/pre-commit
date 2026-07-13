@@ -1,14 +1,14 @@
 #!/bin/sh
-# Pre-commit validation hook
-# Validates staged JSON files and checks for TypeScript syntax using Docker.
+# Pre-commit validation hook — validates staged JSON files.
+# TypeScript type-checking is handled by the GitHub Actions validate job.
 # Run once to enable: git config core.hooksPath .githooks
 set -e
 
-CYAN='\033[0;36m'; RED='\033[0;31m'; GREEN='\033[0;32m'; NC='\033[0m'
+GREEN='\033[0;32m'; RED='\033[0;31m'; CYAN='\033[0;36m'; NC='\033[0m'
 
 echo "${CYAN}▶ Pre-commit checks...${NC}"
 
-# ── 1. JSON validation ──────────────────────────────────────────────────────
+# ── JSON validation ──────────────────────────────────────────────────────────
 STAGED_JSON=$(git diff --cached --name-only --diff-filter=ACM | grep '\.json$' || true)
 
 if [ -n "$STAGED_JSON" ]; then
@@ -28,17 +28,6 @@ if [ -n "$STAGED_JSON" ]; then
     if (!ok) process.exit(1);
   " || {
     echo "${RED}✗ JSON validation failed. Fix errors above and try again.${NC}"
-    exit 1
-  }
-fi
-
-# ── 2. TypeScript syntax check (only if .ts/.tsx files are staged) ──────────
-STAGED_TS=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|tsx)$' || true)
-
-if [ -n "$STAGED_TS" ]; then
-  docker run --rm -v "$(pwd):/app:ro" -w /app node:20-alpine \
-    sh -c "node node_modules/.bin/tsc --noEmit --skipLibCheck 2>&1" || {
-    echo "${RED}✗ TypeScript errors found. Fix them and try again.${NC}"
     exit 1
   }
 fi

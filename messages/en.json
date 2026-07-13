@@ -138,7 +138,16 @@
                 "period": "06/2023 – 12/2023",
                 "location": "Remote",
                 "description": "Contractor for a platform based on Sitefinity CRM, building custom widgets and template applications using .NET Framework with Dynamics 365 integrations and RESTful web services. Frontend built with React.js using Redux reducers for state management and Ant Design for UI components, with custom hooks for specific business logic.",
-                "tech": ["C#", ".NET Framework", "Sitefinity CMS", "Dynamics 365", "React", "Redux", "Ant Design", "REST APIs"]
+                "tech": [
+                    "C#",
+                    ".NET Framework",
+                    "Sitefinity CMS",
+                    "Dynamics 365",
+                    "React",
+                    "Redux",
+                    "Ant Design",
+                    "REST APIs"
+                ]
             },
             {
                 "company": "BairesDev",
