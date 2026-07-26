@@ -15,8 +15,14 @@ RUN npm run build
 # ── Stage 3: runner ──────────────────────────────────────────────────────────
 FROM node:20-alpine AS runner
 WORKDIR /app
+ARG APP_BUILD_DATE=0000-00-00
+ARG APP_BUILD_NUMBER=0
+ARG APP_BUILD_VERSION=0000-00-00.0
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV APP_BUILD_DATE=$APP_BUILD_DATE
+ENV APP_BUILD_NUMBER=$APP_BUILD_NUMBER
+ENV APP_BUILD_VERSION=$APP_BUILD_VERSION
 
 RUN addgroup --system --gid 1001 nodejs && \
     adduser  --system --uid 1001 nextjs

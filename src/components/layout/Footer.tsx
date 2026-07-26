@@ -2,6 +2,10 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations("footer");
+    const buildDate = process.env.APP_BUILD_DATE ?? "unknown-date";
+    const buildNumber = process.env.APP_BUILD_NUMBER ?? "0";
+    const buildVersion = process.env.APP_BUILD_VERSION ?? `${buildDate}.${buildNumber}`;
+
     return (
         <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
             <p>{t("built_with")}</p>
@@ -14,6 +18,9 @@ export default function Footer() {
                 >
                     {t("source")}
                 </a>
+            </p>
+            <p className="mt-2 text-xs text-slate-600">
+                Build {buildVersion} ({buildDate} #{buildNumber})
             </p>
         </footer>
     );
