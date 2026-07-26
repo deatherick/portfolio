@@ -35,7 +35,7 @@ export default function Contact() {
         },
         {
             label: t("linkedin_label"),
-            value: "linkedin.com/in/erickmorales-dev",
+            value: "linkedin.com/in/dev-erick-morales",
             href: t("linkedin_url"),
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
