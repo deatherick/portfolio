@@ -27,7 +27,7 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale} className="scroll-smooth">
-            <body className={`${geistSans.variable} ${geistMono.variable} bg-slate-950 text-white antialiased`}>
+            <body className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased`}>
                 <NextIntlClientProvider>
                     <Navbar />
                     <main>{children}</main>
