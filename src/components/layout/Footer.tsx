@@ -2,9 +2,11 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
     const t = useTranslations("footer");
-    const buildDate = process.env.APP_BUILD_DATE ?? "unknown-date";
-    const buildNumber = process.env.APP_BUILD_NUMBER ?? "0";
-    const buildVersion = process.env.APP_BUILD_VERSION ?? `${buildDate}.${buildNumber}`;
+    // Vercel expone el SHA del commit desplegado automaticamente (sin config
+    // extra). No hay una variable equivalente de fecha de commit, asi que
+    // usamos el hash corto como identificador de build.
+    const commitSha = process.env.VERCEL_GIT_COMMIT_SHA;
+    const buildId = commitSha ? commitSha.slice(0, 7) : "dev";
 
     return (
         <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
@@ -20,7 +22,7 @@ export default function Footer() {
                 </a>
             </p>
             <p className="mt-2 text-xs text-slate-600">
-                Build {buildVersion} ({buildDate} #{buildNumber})
+                Build {buildId}
             </p>
         </footer>
     );
